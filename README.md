@@ -14,4 +14,8 @@ After preprocessing, the `get_dummies()` method is used to create variables for 
 The PCA algorithm was used to reduce the dimensions of the X DataFrame to three principal components and these dimensions were placed in a new DataFrame, `pcs_df`.
 
 ### Clustering Cryptocurrencies Using K-means
-Using the `pcs_df` DataFrame, an elbow curve using hvPlot was created to find the best value for K, which turned out to be 4. Then the `pcs_df` DataFrame was used to run the K-means algorithm to make predictions of the K clusters for the cryptocurrencies’ data.
+Using the `pcs_df` DataFrame, an elbow curve using hvPlot was created to find the best value for K, which turned out to be 4 as seen in the following plot.
+
+<img width="716" alt="Screen Shot 2021-11-13 at 6 03 03 PM" src="https://user-images.githubusercontent.com/85901073/141661520-dc433419-db6c-42fa-b564-9669307a9593.png">
+
+Then the `pcs_df` DataFrame was used to run the K-means algorithm to make predictions of the K clusters for the cryptocurrencies’ data.
